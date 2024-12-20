@@ -1,0 +1,173 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(to bottom, #87ceeb, #ffffff);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   background: #ffffff;
+   width: 90%;
+   max-width: 600px;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+}
+
+h1 {
+   font-size: 2rem;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.tab-container {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.tab {
+   margin: 0 10px;
+   padding: 10px 20px;
+   font-size: 1rem;
+   cursor: pointer;
+   background-color: #f0f0f0;
+   border-radius: 4px;
+   transition: background-color 0.3s;
+}
+
+.tab:hover {
+   background-color: #e0e0e0;
+}
+
+.tab.active {
+   background-color: #007bff;
+   color: white;
+}
+
+.weather-container {
+   margin-top: 20px;
+}
+
+.grant-location-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.grant-location-container img {
+   margin-bottom: 10px;
+}
+
+.grant-location-container p {
+   margin: 5px 0;
+}
+
+.btn {
+   padding: 10px 20px;
+   font-size: 1rem;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.btn:hover {
+   background-color: #0056b3;
+}
+
+.form-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.form-container input {
+   padding: 10px;
+   font-size: 1rem;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: 70%;
+}
+
+.form-container button {
+   margin-left: 10px;
+   padding: 10px;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.form-container img {
+   display: block;
+}
+
+.loading-container {
+   display: none; 
+   text-align: center;
+}
+
+.loading-container img {
+   margin-bottom: 10px;
+}
+
+.user-info-container {
+   margin-top: 20px;
+   text-align: left;
+}
+
+.user-info-container .name {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 10px;
+}
+
+.name img {
+   width: 20px;
+   height: 20px;
+}
+
+.parameter-container {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.parameter {
+   text-align: center;
+}
+
+.parameter img {
+   display: block;
+   margin: 0 auto;
+   width: 40px;
+   height: 40px;
+}
+
+.parameter p {
+   margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+   .parameter-container {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .parameter {
+       margin-bottom: 20px;
+   }
+
+   .form-container input {
+       width: 100%;
+   }
+}
